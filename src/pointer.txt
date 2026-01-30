@@ -1,0 +1,46 @@
+Java does not support pointers explicitly like C/C++.
+
+Reasons:
+1. Security
+
+Pointers can access any memory location
+
+This may lead to:
+
+Data corruption
+
+Illegal memory access
+
+Java avoids this to be secure (important for web & enterprise apps)
+
+2. Simplicity
+
+Pointer arithmetic (*, &, ++) is confusing for beginners
+
+Java was designed to be easy to learn and use
+
+3. Automatic Memory Management
+
+Java has Garbage Collector
+
+Developers don’t need to:
+
+Allocate memory manually
+
+Free memory manually
+
+Pointers would break this mechanism
+
+4. No Pointer Arithmetic
+
+Java references cannot be incremented or decremented
+
+This avoids bugs like:
+
+Dangling pointers
+
+Memory leaks
+
+ Important note:
+
+ Java uses references internally, but does not allow pointer operations

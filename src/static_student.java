@@ -1,8 +1,9 @@
-class Student {
+class static_student
+{
     int rollNo;
     String name;
     static String collegeName = "SIT";
-    Student(int r, String n) 
+    static_student(int r, String n) 
     {
         rollNo=r;
         name=n;
@@ -15,7 +16,7 @@ class Student {
     }
     public static void main(String[] args) 
     {
-        Student s1 = new Student(103, "Mansi");
+        static_student s1 = new static_student(103, "Mansi");
         s1.display();
     }
 }
